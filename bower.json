@@ -15,7 +15,7 @@
     "Burger-Icon"
   ],
   "homepage": "https://github.com/KonradRolof/animatedMenuIcon",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",

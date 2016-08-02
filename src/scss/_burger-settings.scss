@@ -1,0 +1,11 @@
+// settings for the circle shape
+$link-background  : #f44336;
+$link-width       : 40px;
+$link-height      : $link-width; // to get a circle height should be equal width
+$material-hover   : true;
+
+// settings for the burger icon
+$burger-width     : 22px;
+$burger-height    : 16px;
+$line-weight      : 2px; // if this is an odd number all numbers has to be odd!
+$line-color       : #FFFFFF;

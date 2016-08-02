@@ -12,7 +12,8 @@
 <body>
 <div class="container">
     <header class="section">
-        <h1>Animated Menu Icon with CSS (SCSS)</h1>
+        <h1>Animated Menu Icon with CSS (SCSS)
+        <span class="author">by Konrad Rolof</span></h1>
 
         <p>How to animate a burer icon to a close-cross icon just with CSS. The internet is full of short code snipets,
             codepen and JSFiddle sites. Every time I code a new website I start from zero to write the styles for this
@@ -21,18 +22,51 @@
         SCSS again and again. So for all lazy coders: here is all you need ready to take!</p>
     </header>
 
-    <h2>The three good morph animations</h2>
+    <main class="section">
+        <h2>The three good morph animations</h2>
 
-    <p>To display a good clickable shape add a circle
-        <small>(40px × 40px)</small>
-        around the burger icon. It is not a required but usefull for a good UE. </p> <p>To change the state of the icons
-    I toggle the CSS-class-selector <code>.open-menu</code> at the DOM-element <code>body</code> with
-    <a href="http://jquery.com/" rel="nofollow">jQuery</a>. I need this class-selector also to open and close an
-    off-canvas-navigation.</p>
+        <p>To display a good clickable shape add a circle
+            <small>(40px × 40px)</small>
+            around the burger icon. It is not a required but usefull for a good UE. </p> <p>To change the state of the icons
+        I toggle the CSS-class-selector <code>.open-menu</code> at the DOM-element <code>body</code> with
+        <a href="http://jquery.com/" rel="nofollow">jQuery</a>. I need this class-selector also to open and close an
+        off-canvas-navigation. At the right side I added a small off-canvas-element for demonstration.</p>
 
-    <h3>Animation one</h3>
-    <a href="#" class="menu-button"> <span class="burger-icon burger-1"><span></span><span></span><span></span></span>
-    </a>
+        <section class="section">
+            <h3>Animation one</h3>
+            <p>This burger animation needs three <code>&lt;span&gt;</code> tags for three bars of the icon.</p>
+            <a href="#" class="menu-button">
+                <span class="burger-icon burger-1"><span></span><span></span><span></span></span>
+            </a>
+
+            <pre><code>&lt;a href="#" class="menu-button"&gt;
+    &lt;span class="burger-icon burger-1"&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+    &lt;/span&gt;
+&lt;a&gt;</code></pre>
+        </section>
+
+        <section class="section">
+            <h3>Animation two</h3>
+            <p>This burger animation needs four <code>&lt;span&gt;</code> tags for four bars of the icon. But don't worry
+                every time you see just two or three.</p>
+            <a href="#" class="menu-button">
+                <span class="burger-icon burger-2"><span></span><span></span><span></span><span></span></span>
+            </a>
+
+            <pre><code>&lt;a href="#" class="menu-button"&gt;
+    &lt;span class="burger-icon burger-2"&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+    &lt;/span&gt;
+&lt;a&gt;</code></pre>
+        </section>
+    </main>
+
 </div>
 <div class="off-canvas">
     <a href="http://konrad-rolof.de">

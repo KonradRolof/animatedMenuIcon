@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #F8F8F8;
   color: #37474F;
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
@@ -32,6 +32,15 @@ h3, h4 {
 
 h1 {
   font-size: 2.2em;
+
+  .author {
+    display: block;
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.45em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 }
 
 h2 {
@@ -70,7 +79,22 @@ code {
   color: #455A64;
   font-family: 'Roboto Mono', 'Lucida Console', 'Courier New', monospace;
   font-weight: 500;
-  font-size: 0.85em;
+  font-size: 0.8em;
+}
+
+pre {
+  border-left: 2px solid #8BC34A;
+  box-shadow: 0 1px 2px rgba(#000000, 0.3);
+
+  code {
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 0.9em;
+    line-height: 1.2;
+  }
 }
 
 small {
