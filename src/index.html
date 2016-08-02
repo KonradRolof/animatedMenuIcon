@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Animated Menu Icon with CSS</title>
+    <title>Animated Menu Icon with CSS (SCSS)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to animate a burger icon to a close-cross icon with CSS. Here you get it as SCSS!">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/burger-icon.css">
@@ -10,31 +12,31 @@
 <body>
 <div class="container">
     <header class="section">
-        <h1>Animated Menu Icon with CSS</h1>
+        <h1>Animated Menu Icon with CSS (SCSS)</h1>
 
         <p>How to animate a burer icon to a close-cross icon just with CSS. The internet is full of short code snipets,
             codepen and JSFiddle sites. Every time I code a new website I start from zero to write the styles for this
-            animation.
-        </p>
-        <p>
-            I'm boared to write the SCSS again and again. So for all lazy coders: here is all you need ready to take!
-        </p>
+            animation. I prefer the animations from <a href="https://codepen.io/designcouch/pen/Atyop" rel="nofollow">this
+                codepen</a> by <a href="https://codepen.io/designcouch/">Jesse Couch</a>.</p> <p>I'm boared to write the
+        SCSS again and again. So for all lazy coders: here is all you need ready to take!</p>
     </header>
 
     <h2>The three good morph animations</h2>
 
     <p>To display a good clickable shape add a circle
         <small>(40px × 40px)</small>
-        around the burger icon. It is not a required but usefull for a good UE.
-    </p>
-    <p>To change the state of the icons I toggle the CSS-class-selector <code>open-menu</code> at the DOM-element <code>body</code>
-        with
-        <a href="http://jquery.com/" rel="nofollow">jQuery</a>. I need this class-selector also to open and close an
-        off-canvas-navigation.</p>
+        around the burger icon. It is not a required but usefull for a good UE. </p> <p>To change the state of the icons
+    I toggle the CSS-class-selector <code>.open-menu</code> at the DOM-element <code>body</code> with
+    <a href="http://jquery.com/" rel="nofollow">jQuery</a>. I need this class-selector also to open and close an
+    off-canvas-navigation.</p>
 
     <h3>Animation one</h3>
-    <a href="#" class="menu-button">
-        <span class="burger-icon burger-1"><span></span><span></span><span></span></span>
+    <a href="#" class="menu-button"> <span class="burger-icon burger-1"><span></span><span></span><span></span></span>
+    </a>
+</div>
+<div class="off-canvas">
+    <a href="http://konrad-rolof.de">
+        <img src="http://www.konrad-rolof.de/wp-content/themes/derkontheme/images/branding.svg" alt="Logo Konrad Rolof" width="40" height="45">
     </a>
 </div>
 <script src="./js/jquery.slim.min.js"></script>

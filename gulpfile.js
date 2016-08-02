@@ -1,5 +1,4 @@
 var autoprefixer = require('gulp-autoprefixer'),
-    sourcemaps = require('gulp-sourcemaps'),
     sequence = require('run-sequence'),
     cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename'),
@@ -23,14 +22,13 @@ gulp.task('clean', function (done) {
 // In production, the CSS is compressed
 gulp.task('sass', function () {
     var demo = gulp.src('./src/scss/*.scss')
-        .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compact'
         }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: COMPATIBILITY
         }))
-        .pipe(sourcemaps.write())
+        .pipe(cssnano())
         .pipe(gulp.dest('./demo/css'));
 
     var normal = gulp.src('./src/scss/burger-icon.scss')

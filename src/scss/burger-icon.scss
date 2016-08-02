@@ -49,15 +49,31 @@ $line-color       : #FFFFFF;
 // burger animation 1
 .burger-1 {
   span {
+    transition: transform 0.25s, opacity 0.25s, left 0.25s ease-in-out;
 
     &:nth-child(1) {
       top: 0;
+
+      body.open-menu & {
+        top: #{($burger-height - $line-weight) / 2};
+        transform: rotate(135deg);
+      }
     }
     &:nth-child(2) {
       top: #{($burger-height - $line-weight) / 2};
+
+      body.open-menu & {
+        opacity: 0;
+        left: -100%;
+      }
     }
     &:nth-child(3) {
       top: #{$burger-height - $line-weight};
+
+      body.open-menu & {
+        top: #{($burger-height - $line-weight) / 2};
+        transform: rotate(-135deg);
+      }
     }
   }
 }
