@@ -50,6 +50,13 @@ But don't worry every time you see just two or three.
 <a>
 ```
 
+# Installation
+
+* Clone or [download](https://github.com/KonradRolof/animatedMenuIcon/archive/master.zip) project from [GitHub](https://github.com/KonradRolof/animatedMenuIcon)
+* Install with [bower.io](https://bower.io)  
+`$ bower install animated-menu-icon --save-dev`
+* You just need the markup and the burger icon styles
+
 # SCSS Options
 
 Option | Value | Description
