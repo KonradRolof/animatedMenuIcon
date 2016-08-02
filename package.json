@@ -1,0 +1,38 @@
+{
+  "name": "animated-menu-icon",
+  "version": "1.0.0",
+  "description": "Animate a burger-menu-icon just with CSS (SCSS)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KonradRolof/animatedMenuIcon.git"
+  },
+  "keywords": [
+    "Sass",
+    "SCSS",
+    "CSS",
+    "Icon",
+    "Menu",
+    "Burger-Icon"
+  ],
+  "author": "Konrad Rolof",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/KonradRolof/animatedMenuIcon/issues"
+  },
+  "homepage": "https://github.com/KonradRolof/animatedMenuIcon",
+  "devDependencies": {
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2"
+  }
+}
