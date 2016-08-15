@@ -31,7 +31,7 @@ This burger animation needs three `<span>` tags for three bars of the icon.
         <span></span>
         <span></span>
     </span>
-<a>
+</a>
 ```
 
 ## Animation two
@@ -47,7 +47,7 @@ But don't worry every time you see just two or three.
         <span></span>
         <span></span>
     </span>
-<a>
+</a>
 ```
 
 # Installation
