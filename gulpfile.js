@@ -58,7 +58,7 @@ gulp.task('sass', function () {
 
 gulp.task('copy-normalize', function () {
     gulp.src('./bower_components/normalize-css/normalize.css')
-        .pipe(gulp.dest('./demo/'));
+        .pipe(gulp.dest('./demo/css'));
 });
 
 gulp.task('copy-jQuery', function () {
