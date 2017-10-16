@@ -46,13 +46,13 @@
                 </button>
                 <!-- /burger icon animation 1 -->
 
-            <pre><code>&lt;a href="#" class="burger-button"&gt;
+            <pre><code>&lt;button class="burger-button"&gt;
     &lt;span class="burger-button__icon"&gt;
         &lt;span class="burger-button__stripe"&gt;&lt;/span&gt;
         &lt;span class="burger-button__stripe"&gt;&lt;/span&gt;
         &lt;span class="burger-button__stripe"&gt;&lt;/span&gt;
     &lt;/span&gt;
-&lt;/a&gt;</code></pre>
+&lt;/button&gt;</code></pre>
             </section>
 
             <section class="section">
@@ -61,7 +61,7 @@
                     worry every time you see just two or three.</p>
                 <!-- burger icon animation 2 -->
                 <button class="burger-button-2">
-                    <span class="burger-button__icon">
+                    <span class="burger-button-2__icon">
                         <span class="burger-button-2__stripe"></span>
                         <span class="burger-button-2__stripe"></span>
                         <span class="burger-button-2__stripe"></span>
@@ -70,14 +70,14 @@
                 </button>
                 <!-- /burger icon animation 2 -->
 
-            <pre><code>&lt;a href="#" class="burger-button-2"&gt;
-    &lt;span class="burger-button__icon"&gt;
+            <pre><code>&lt;button class="burger-button-2"&gt;
+    &lt;span class="burger-button-2__icon"&gt;
         &lt;span class="burger-button-2__stripe"&gt;&lt;/span&gt;
         &lt;span class="burger-button-2__stripe"&gt;&lt;/span&gt;
         &lt;span class="burger-button-2__stripe"&gt;&lt;/span&gt;
         &lt;span class="burger-button-2__stripe"&gt;&lt;/span&gt;
     &lt;/span&gt;
-&lt;/a&gt;</code></pre>
+&lt;/button&gt;</code></pre>
             </section>
             
             <section class="section">
@@ -87,7 +87,7 @@
                         project from <a href="https://github.com/KonradRolof/animatedMenuIcon">GitHub</a></li>
                     <li>
                         Install with <a href="https://bower.io">bower.io</a><br>
-                        <code>$ bower install animated-menu-icon --save-dev</code>
+                        <code>$ bower install --save-dev animated-menu-icon</code>
                     </li>
                     <li>
                         You just need the markup and the burger icon styles
@@ -239,9 +239,11 @@
 </div>
 <script src="./js/jquery.slim.min.js"></script>
 <script>
-    $("body").on("click", ".burger-button, .burger-button-2", function (event) {
-        event.preventDefault();
-        $("body").toggleClass("open-menu");
+    jQuery(document).ready(function ($) {
+        $("body").on("click", ".burger-button, .burger-button-2", function (event) {
+            event.preventDefault();
+            $("body").toggleClass("open-menu");
+        });
     });
 </script>
 </body>

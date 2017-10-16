@@ -10,7 +10,7 @@
   width: $burger-button-width;
   height: $burger-button-width;
   margin: $burger-button-margin;
-  padding: #{($burger-button-height - $burger-height) / 2} 0 0 #{($burger-button-width - $burger-width) / 2};
+  padding: #{($burger-button-height - $burger-height) / 2} #{($burger-button-width - $burger-width) / 2};
   background-color: $burger-button-background;
   border: $burger-button-border;
   border-radius: 50%;
