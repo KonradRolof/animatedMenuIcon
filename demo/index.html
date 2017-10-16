@@ -38,14 +38,19 @@
                 <p>This burger animation needs three <code>&lt;span&gt;</code> tags for three bars of the icon.</p>
                 <!-- burger icon animation 1 -->
                 <button class="burger-button">
-                    <span class="burger-button__icon"><span></span><span></span><span></span></span> </button>
+                    <span class="burger-button__icon">
+                        <span class="burger-button__stripe"></span>
+                        <span class="burger-button__stripe"></span>
+                        <span class="burger-button__stripe"></span>
+                    </span>
+                </button>
                 <!-- /burger icon animation 1 -->
 
-            <pre><code>&lt;a href="#" class="menu-button"&gt;
-    &lt;span class="burger-icon burger-1"&gt;
-        &lt;span&gt;&lt;/span&gt;
-        &lt;span&gt;&lt;/span&gt;
-        &lt;span&gt;&lt;/span&gt;
+            <pre><code>&lt;a href="#" class="burger-button"&gt;
+    &lt;span class="burger-button__icon"&gt;
+        &lt;span class="burger-button__stripe"&gt;&lt;/span&gt;
+        &lt;span class="burger-button__stripe"&gt;&lt;/span&gt;
+        &lt;span class="burger-button__stripe"&gt;&lt;/span&gt;
     &lt;/span&gt;
 &lt;/a&gt;</code></pre>
             </section>
@@ -55,16 +60,22 @@
                 <p>This burger animation needs four <code>&lt;span&gt;</code> tags for four bars of the icon. But don't
                     worry every time you see just two or three.</p>
                 <!-- burger icon animation 2 -->
-                <button class="burger-button">
-                    <span class="burger-button__icon"><span></span><span></span><span></span><span></span></span> </button>
+                <button class="burger-button-2">
+                    <span class="burger-button__icon">
+                        <span class="burger-button-2__stripe"></span>
+                        <span class="burger-button-2__stripe"></span>
+                        <span class="burger-button-2__stripe"></span>
+                        <span class="burger-button-2__stripe"></span>
+                    </span>
+                </button>
                 <!-- /burger icon animation 2 -->
 
-            <pre><code>&lt;a href="#" class="menu-button"&gt;
-    &lt;span class="burger-icon burger-2"&gt;
-        &lt;span&gt;&lt;/span&gt;
-        &lt;span&gt;&lt;/span&gt;
-        &lt;span&gt;&lt;/span&gt;
-        &lt;span&gt;&lt;/span&gt;
+            <pre><code>&lt;a href="#" class="burger-button-2"&gt;
+    &lt;span class="burger-button__icon"&gt;
+        &lt;span class="burger-button-2__stripe"&gt;&lt;/span&gt;
+        &lt;span class="burger-button-2__stripe"&gt;&lt;/span&gt;
+        &lt;span class="burger-button-2__stripe"&gt;&lt;/span&gt;
+        &lt;span class="burger-button-2__stripe"&gt;&lt;/span&gt;
     &lt;/span&gt;
 &lt;/a&gt;</code></pre>
             </section>
@@ -228,7 +239,7 @@
 </div>
 <script src="./js/jquery.slim.min.js"></script>
 <script>
-    $("body").on("click", ".menu-button", function (event) {
+    $("body").on("click", ".burger-button, .burger-button-2", function (event) {
         event.preventDefault();
         $("body").toggleClass("open-menu");
     });

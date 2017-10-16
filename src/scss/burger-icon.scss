@@ -1,3 +1,30 @@
-@import "burger-button/burger-button";
+@charset "UTF-8";
 
-@include burger-button(1, true);
+@import "burger-button/burger-settings";
+@import "burger-button/burger-circle";
+@import "burger-button/burger-general";
+@import "burger-button/burger-animation-1";
+@import "burger-button/burger-animation-2";
+
+@mixin burger-button(
+  $animation: 1,
+  $material-hover: true
+) {
+  .burger-button {
+    @include button-shape($material-hover)
+  }
+
+  .burger-button__icon {
+    @include burger-icon;
+  }
+
+  .burger-button__stripe {
+    @include burger-stripe-general;
+    @if($animation == 1) {
+      @include burger-animation-1;
+    }
+    @else {
+      @include burger-animation-2;
+    }
+  }
+}
