@@ -1,0 +1,16 @@
+// settings for the circle shape
+$burger-button-background : #f44336;
+$burger-button-width      : 40px;
+$burger-button-height     : $burger-button-width; // to get a circle height should be equal width
+$burger-button-margin     : 20px auto;
+$burger-button-border     : none;
+$material-hover           : true;
+
+// settings for the burger icon
+$burger-width     : 22px;
+$burger-height    : 16px;
+$line-weight      : 2px; // if this is an odd number all numbers has to be odd!
+$line-color       : #FFFFFF;
+$animation-type   : 1;
+$animation-time   : 0.25s;
+$animation-ease   : ease-in-out;

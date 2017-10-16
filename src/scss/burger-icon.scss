@@ -1,7 +1,3 @@
-@charset "UTF-8";
+@import "burger-button/burger-button";
 
-@import "burger-settings";
-@import "burger-circle";
-@import "burger-general";
-@import "burger-animation-1";
-@import "burger-animation-2";
+@include burger-button(1, true);

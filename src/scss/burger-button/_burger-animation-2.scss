@@ -1,0 +1,36 @@
+// burger animation 2
+@mixin burger-animation-2 {
+  transition: transform $animation-time, width $animation-time, top $animation-time, left $animation-time $animation-ease;
+
+  &:nth-child(1) {
+    top: 0;
+
+    body.open-menu & {
+      top: #{($burger-height - $line-weight) / 2};
+      width: 0;
+      left: 50%;
+    }
+  }
+  &:nth-child(2) {
+    top: #{($burger-height - $line-weight) / 2};
+
+    body.open-menu & {
+      transform: rotate(45deg);
+    }
+  }
+  &:nth-child(3) {
+    top: #{($burger-height - $line-weight) / 2};
+    body.open-menu & {
+      transform: rotate(-45deg);
+    }
+  }
+  &:nth-child(4) {
+    top: #{$burger-height - $line-weight};
+
+    body.open-menu & {
+      top: #{($burger-height - $line-weight) / 2};
+      width: 0;
+      left: 50%;
+    }
+  }
+}

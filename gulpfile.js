@@ -42,7 +42,7 @@ gulp.task('sass', function () {
 
     var normal = gulp.src('./src/scss/burger-icon.scss')
         .pipe(sass({
-            outputStyle: 'nested'
+            outputStyle: 'expanded'
         }))
         .pipe(autoprefixer({
             browsers: COMPATIBILITY
@@ -54,7 +54,7 @@ gulp.task('sass', function () {
             suffix: ".min"
         }))
         .pipe(sass({
-            outputStyle: 'compact'
+            outputStyle: 'expanded'
         }))
         .pipe(autoprefixer({
             browsers: COMPATIBILITY
