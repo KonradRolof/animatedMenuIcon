@@ -1,7 +1,20 @@
 @charset "UTF-8";
+// Styles for Animated Menu Icon demo file
+//
+// By Konrad Rolof <info@konrad-rolof.de>
+// https://www.konrad-rolof.de
+// Licensed under MIT Open Source
 
+//
+// load dependencies
+//
 @import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700|Roboto+Mono:500);
+@import "burger-icon/burger-settings";
+@import "burger-icon/burger-icon";
 
+//
+// basic styles
+//
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -164,7 +177,7 @@ table {
   background-color: #37474F;
   transition: transform 0.4s ease-in-out;
 
-  body.open-menu & {
+  body.menu--open & {
     transform: translateX(-100%);
   }
 
@@ -183,4 +196,27 @@ table {
 .table-scroll {
   width: 100%;
   overflow-x: auto;
+}
+
+//
+// styles for two example burger buttons
+//
+
+//
+// simple include for first button
+//
+@include burger-button(1, true);
+
+//
+// advanced includes for second button
+//
+.burger-button-2 {
+  @include button-shape(false);
+}
+.burger-button-2__icon {
+  @include burger-icon;
+}
+.burger-button-2__stripe {
+  @include burger-stripe-general;
+  @include burger-animation-2;
 }

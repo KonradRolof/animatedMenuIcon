@@ -1,7 +1,5 @@
 @charset "UTF-8";
+@import "burger-icon/burger-settings";
+@import "burger-icon/burger-icon";
 
-@import "burger-settings";
-@import "burger-circle";
-@import "burger-general";
-@import "burger-animation-1";
-@import "burger-animation-2";
+@include burger-button($burger-button-animation-type, $burger-button-material-hover);
