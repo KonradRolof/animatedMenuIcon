@@ -1,16 +1,16 @@
 // settings for the circle shape
-$burger-button-background : #f44336;
-$burger-button-width      : 40px;
-$burger-button-height     : $burger-button-width; // to get a circle height should be equal width
-$burger-button-margin     : 20px auto;
-$burger-button-border     : none;
-$material-hover           : true;
+$burger-button-background     : #f44336;
+$burger-button-width          : 40px;
+$burger-button-height         : $burger-button-width; // to get a circle height should be equal width
+$burger-button-margin         : 20px auto;
+$burger-button-border         : none;
+$burger-button-material-hover : true;
 
 // settings for the burger icon
-$burger-width     : 18px;
-$burger-height    : 12px;
-$line-weight      : 2px; // if this is an odd number all numbers has to be odd!
-$line-color       : #FFFFFF;
-$animation-type   : 1;
-$animation-time   : 0.25s;
-$animation-ease   : ease-in-out;
+$burger-button-burger-width     : 18px;
+$burger-button-burger-height    : 12px;
+$burger-button-line-weight      : 2px; // if this is an odd number all numbers has to be odd!
+$burger-button-line-color       : #FFFFFF;
+$burger-button-animation-type   : 1;
+$burger-button-animation-time   : 0.25s;
+$burger-button-animation-ease   : ease-in-out;

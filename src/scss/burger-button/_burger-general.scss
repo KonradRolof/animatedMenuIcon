@@ -1,19 +1,1 @@
-// general burger icon
-@mixin burger-icon {
-  display: block;
-  width: $burger-width;
-  height: $burger-height;
-  position: relative;
-  cursor: pointer;
-}
 
-// general line styles
-@mixin burger-stripe-general {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: $line-weight;
-  background-color: $line-color;
-  opacity: 1;
-}
