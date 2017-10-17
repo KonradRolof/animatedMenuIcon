@@ -1,0 +1,76 @@
+/*!
+ * Animated Menu Icon
+ * By Konrad Rolof <info@konrad-rolof.de>
+ * https://www.konrad-rolof.de
+ * Licensed under GPL GENERAL PUBLIC LICENSE 3.0
+  */
+.burger-button {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  padding: 14px 11px;
+  background-color: #f44336;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.25s, box-shadow 0.25s ease-in-out;
+  -webkit-appearance: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.burger-button:hover, .burger-button:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #ff3a2b;
+}
+
+.burger-button:focus {
+  outline: none;
+}
+
+.burger-button__icon {
+  display: block;
+  width: 18px;
+  height: 12px;
+  position: relative;
+}
+
+.burger-button__stripe {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  opacity: 1;
+  transition: transform 0.25s, opacity 0.25s, left 0.25s ease-in-out;
+}
+
+.burger-button__stripe:nth-child(1) {
+  top: 0;
+}
+
+body.menu--open .burger-button__stripe:nth-child(1) {
+  top: 5px;
+  -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
+}
+
+.burger-button__stripe:nth-child(2) {
+  top: 5px;
+}
+
+body.menu--open .burger-button__stripe:nth-child(2) {
+  opacity: 0;
+  left: -100%;
+}
+
+.burger-button__stripe:nth-child(3) {
+  top: 10px;
+}
+
+body.menu--open .burger-button__stripe:nth-child(3) {
+  top: 5px;
+  -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+}

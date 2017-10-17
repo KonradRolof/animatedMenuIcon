@@ -9,7 +9,8 @@
 // load dependencies
 //
 @import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700|Roboto+Mono:500);
-@import "burger-icon";
+@import "burger-icon/burger-settings";
+@import "burger-icon/burger-icon";
 
 //
 // basic styles
@@ -176,7 +177,7 @@ table {
   background-color: #37474F;
   transition: transform 0.4s ease-in-out;
 
-  body.open-menu & {
+  body.menu--open & {
     transform: translateX(-100%);
   }
 
