@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import "burger-button/burger-settings";
-@import "burger-button/burger-circle";
+@import "burger-settings";
+@import "burger-button/burger-shape";
 @import "burger-button/burger-general";
 @import "burger-button/burger-animation-1";
 @import "burger-button/burger-animation-2";
@@ -11,7 +11,7 @@
   $material-hover: true
 ) {
   .burger-button {
-    @include button-shape($material-hover)
+    @include button-shape($material-hover);
   }
 
   .burger-button__icon {

@@ -28,7 +28,7 @@ gulp.task('clean', function (done) {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 gulp.task('sass', function () {
-    var demo = gulp.src('./src/scss/*.scss')
+    var demo = gulp.src('./src/scss/demo-styles.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compact'
@@ -75,24 +75,19 @@ gulp.task('copy-jQuery', function () {
         .pipe(gulp.dest('./demo/js'));
 });
 
-gulp.task('copyfiles', function () {
-    gulp.src('./src/**/*.html')
-        .pipe(gulp.dest('./demo'));
-});
-
 gulp.task('serve', ['build'], function() {
 
     browserSync.init({
         server: './demo'
     });
 
-    gulp.watch('src/scss/*.scss', ['sass']);
-    gulp.watch('src/index.html', ['copyfiles']).on('change', browserSync.reload);
+    gulp.watch('src/scss/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch('demo/index.html').on('change', browserSync.reload);
 });
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function (done) {
-    sequence('clean', ['copyfiles', 'copy-normalize', 'copy-jQuery', 'sass'], done);
+    sequence('clean', ['copy-normalize', 'copy-jQuery', 'sass'], done);
 });
 
 // Build the site, run the server, and watch for file changes

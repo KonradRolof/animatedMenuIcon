@@ -1,8 +1,15 @@
 @charset "UTF-8";
+/**
+ * styles for animated menu icon demo file
+ *
+ * @author Konrad Rolof <info@konrad-rolof.de>
+ */
 
+// load dependencies
 @import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700|Roboto+Mono:500);
 @import "burger-icon";
 
+// basic styles
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -185,6 +192,10 @@ table {
   width: 100%;
   overflow-x: auto;
 }
+
+/**
+ * styles for two example burger buttons
+ */
 
 // simple include for first button
 @include burger-button(1, true);
